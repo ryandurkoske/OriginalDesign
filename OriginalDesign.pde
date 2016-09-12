@@ -1,6 +1,6 @@
 int[] coll;
 final int screenWidth = 900, screenHeight = 750;
-final float tileSize = 25;
+final float tileSize = 10;
 ArrayList<Shape> shapeBuffer = new ArrayList<Shape>();
 
 void setup(){
