@@ -56,8 +56,10 @@ public class Square extends Shape{
  }
  public void tick(){
    for(int i = 0; i < this.c.length; i++){
-     this.c[i] -= (int) Math.floor(Math.random() * 51)-25;
+     this.c[i] += (int) Math.floor(Math.random() * 10);
      if(this.c[i] > 255)
+       this.c[i] = 0;
+     if(this.c[i] < 0)
        this.c[i] = 0;
    }
  }
