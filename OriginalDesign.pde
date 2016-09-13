@@ -25,6 +25,7 @@ void tick(){
 }
 
 void draw(){
+  background(0);
   tick();
   for(Shape s : shapeBuffer)
     s.render();
