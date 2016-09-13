@@ -9,12 +9,12 @@ void setup(){
   //colorMode(RGB,255);
   for(int i = 0; i <= screenWidth; i++){
     if(i % tileSize == 0){
-      line(i,0,i,screenHeight);
+      //line(i,0,i,screenHeight);
     }
   }
   for(int i = 0; i <= screenHeight; i++){
     if(i % tileSize == 0){
-      line(0,i,screenWidth,i);
+      //line(0,i,screenWidth,i);
     }
   }
 }
