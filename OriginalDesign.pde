@@ -29,7 +29,7 @@ void mouseDragged(){
     if(mouseButton == LEFT){
       for(int i = shapeBuffer.size()-1; i >= 0; i--){
         if(shapeBuffer.get(i).x == x && shapeBuffer.get(i).y == y ){
-          println("delete");
+          //println("delete");
           shapeBuffer.remove(i);
         }
       }
@@ -39,7 +39,7 @@ void mouseDragged(){
     if(mouseButton == RIGHT){
       for(int i = shapeBuffer.size()-1; i >= 0; i--){
         if(shapeBuffer.get(i).x == x && shapeBuffer.get(i).y == y ){
-          println("delete");
+          //println("delete");
           shapeBuffer.remove(i);
         }
       }
@@ -53,7 +53,7 @@ void mousePressed(){
     if(mouseButton == LEFT){
       for(int i = shapeBuffer.size()-1; i >= 0; i--){
         if(shapeBuffer.get(i).x == x && shapeBuffer.get(i).y == y ){
-          println("delete");
+          //println("delete");
           shapeBuffer.remove(i);
         }
       }
@@ -63,7 +63,7 @@ void mousePressed(){
     if(mouseButton == RIGHT){
       for(int i = shapeBuffer.size()-1; i >= 0; i--){
         if(shapeBuffer.get(i).x == x && shapeBuffer.get(i).y == y ){
-          println("delete");
+          //println("delete");
           shapeBuffer.remove(i);
         }
       }
@@ -149,11 +149,11 @@ public class Square extends Shape{
      this.y -= this.y % tileSize;
    }
    if(this.released == 0){
-       println("setting temp");
+       //println("setting temp");
        this.tempX = this.x;
        this.tempY = this.y;
    }else if(this.released == 2){
-     println("setting pos");
+    // println("setting pos");
      this.x = this.tempX;
      this.y = this.tempY;
      this.direction = 100;
